@@ -1,0 +1,140 @@
+@import url(menu.css);
+@import url(barner.css);
+@import url(blog.css);
+@import url(info.css);
+@import url(productos.css);
+@import url(clientes.css);
+@import url(contacto.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background:#E8F3D6 ;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+header .contenedor{
+    display: table;
+}
+h1{
+    float: left;
+}
+#menu-bar{
+    display: none;
+}
+
+
+#Bienvenidos{
+    text-align: center;
+    
+}
+#Bienvenidos p{
+    padding: 10px;
+}
+/*--------slider--------*/
+
+.slider {
+    width: 100%;
+    margin:auto;
+    height: 300px;
+    overflow: hidden;  
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 16s infinite alternate ;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+
+}
+@media (min-whith:1020) {
+    .slider {
+        height: 500px;
+    }
+}
+        
+
+
+    
+/*--------footer--------*/
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.copy {
+    font-size: 20px;
+}
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+@media (min-whith:768px) {
+
+    .sociales {
+        width:auto;
+    } 
+    footer .contenedor{
+        justify-content: space-between;
+    }
+}   
+
+@media (min-whith:1024px) {
+    .contenedor {
+        width: auto;    
+}
+}
+
+
+
+
+
