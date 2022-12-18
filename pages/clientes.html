@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +14,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
 
+<body>
+    <!-----header-------->
     <header>
         <div class="contenedor">
             <h1>Filipa</h1>
@@ -25,43 +27,48 @@
                 <a href="../pages/clientes.html">Clientes</a>
                 <a href="../pages/productos.html">Productos</a>
                 <a href="../pages/contacto.html">Contacto</a>
-                <a href="">Gifts</a>
+                <a href="../pages/gifts.html">Gifts</a>
             </nav>
         </div>
     </header>
-    <main class=>
+    <!-----Cbarner-------->
+    <main>
         <section id="barner">
             <img src="../css/img/img-barner.jpeg">
             <div class="contenedor">
                 <h2>HELLO SUMMER</h2>
             </div>
         </section>
-        
+        <!-----formulario-------->
+
         <section class="form">
-    <form action="registrar.php" method="post" class="form-registre">
-        <h2 class="form__titulo">Crea una cuenta</h2>
-        <div class="contenedor-inputs">
-            <input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
-            <input type="text" name="apellido" placeholder="Apellido" class="input-48" required>
-            <input type="email" name="correo" placeholder="Correo" class="input-100" required>
-            <input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
-            <input type="text" name="password" placeholder="Clave" class="input-48" required>
-            <input type="text" name="telefono" placeholder="Telefono" class="input-100" required>
-            <input type="submit" value="Registrar" class="btn-enviar" required>
-            <p class="form__link">¿Ya tienes una cuenta? <a href="">Ingresa aqui</a></p>
-        </div>
-    </form>
-        </section>
-        <footer>
-            <div class="contenedor">
-                <p class="copy">My pets &copy; 2022</p>
-                <div class="sociales">
-                    <a class="fa-brands fa-facebook" href="#"></a>
-                    <a class="fa-brands fa-twitter" href="#"></a>
-                    <a class="fa-brands fa-instagram" href="#"></a>
-                    <a class="fa-brands fa-youtube" href="#"></a>
+            <form action="registrar.php" method="post" class="form-registre">
+                <h2 class="form__titulo">Crea una cuenta</h2>
+                <div class="contenedor-inputs">
+                    <input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
+                    <input type="text" name="apellido" placeholder="Apellido" class="input-48" required>
+                    <input type="email" name="correo" placeholder="Correo" class="input-100" required>
+                    <input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
+                    <input type="text" name="password" placeholder="Clave" class="input-48" required>
+                    <input type="text" name="telefono" placeholder="Telefono" class="input-100" required>
+                    <input type="submit" value="Registrar" class="btn-enviar" required>
+                    <p class="form__link">¿Ya tienes una cuenta? <a href="">Ingresa aqui</a></p>
                 </div>
+            </form>
+        </section>
+    </main>
+    <!-----footer-------->
+    <footer>
+        <div class="contenedor">
+            <p class="copy">My pets &copy; 2022</p>
+            <div class="sociales">
+                <a class="fa-brands fa-facebook" href="#"></a>
+                <a class="fa-brands fa-twitter" href="#"></a>
+                <a class="fa-brands fa-instagram" href="#"></a>
+                <a class="fa-brands fa-youtube" href="#"></a>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
+
 </html>
