@@ -25,7 +25,7 @@ section{
     font-family: 'Permanent Marker', cursive;
 }
 #barner h2{
-    font-size: 40px;    
+    font-size: 20px;    
 }
 
 @media (min-width:480px){
@@ -51,7 +51,8 @@ section{
     }    
         #barner h2{
             font-size: 60px;
-        
         }
-    
+
 }
+
+

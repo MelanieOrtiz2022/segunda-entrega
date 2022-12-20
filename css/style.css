@@ -4,7 +4,7 @@
 @import url(info.css);
 @import url(productos.css);
 @import url(clientes.css);
-@import url(contacto.css);
+@import url(galeria.css);
 
 *{
     margin: 0;
@@ -41,12 +41,27 @@ h1{
 
 
 #Bienvenidos{
-    text-align: center;
-    
+    text-align: center;    
 }
-#Bienvenidos p{
-    padding: 10px;
+
+#Bienvenidos h2{
+    font-size: 15px;
 }
+
+@media (min-width:768px){
+    #Bienvenidos h2{
+        font-size: 25px;
+    }   
+}
+
+@media (min-width:1024px){
+    #Bienvenidos h2{
+        font-size: 35px;
+    }   
+
+}
+
+
 /*--------slider--------*/
 
 .slider {
