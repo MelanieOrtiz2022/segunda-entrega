@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -72,7 +73,7 @@ header label {
     transform: translateX(0%);
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .menu {
         position: static;
         width: auto;
@@ -91,12 +92,8 @@ header label {
     }
 }
 
-
-
-
 /*--------barner--------*/
 #barner .contenedor {
-
     display: table;
 }
 
@@ -120,7 +117,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: rgb(14, 13, 13);
+    color: #0e0d0d;
     text-align: center;
     justify-content: center;
     font-family: 'Permanent Marker', cursive;
@@ -130,15 +127,13 @@ section {
     font-size: 20px;
 }
 
-@media (min-width:480px) {
-
+@media (min-width: 480px) {
     #barner h2 {
         font-size: 40px;
     }
-
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     #barner {
         height: 380px;
         overflow: hidden;
@@ -150,7 +145,7 @@ section {
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     #barner img {
         margin-top: -200px;
     }
@@ -158,9 +153,7 @@ section {
     #barner h2 {
         font-size: 60px;
     }
-
 }
-
 
 #Bienvenidos {
     text-align: center;
@@ -170,22 +163,19 @@ section {
     font-size: 15px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     #Bienvenidos h2 {
         font-size: 25px;
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     #Bienvenidos h2 {
         font-size: 35px;
     }
-
 }
 
-
 /*--------slider--------*/
-
 .slider {
     width: 100%;
     margin: auto;
@@ -197,7 +187,6 @@ section {
     display: flex;
     padding: 0;
     width: 400%;
-
     animation: cambio 16s infinite alternate;
 }
 
@@ -242,18 +231,15 @@ section {
     95% {
         margin-left: -300%;
     }
-
 }
 
-@media (min-whith:1020) {
+@media (min-whith: 1020) {
     .slider {
         height: 500px;
     }
 }
 
 /*--------blog--------*/
-
-
 #blog h3,
 h4 {
     text-align: center;
@@ -275,7 +261,7 @@ h4 {
     max-width: 280px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
 
     #blog h3,
     h4 {
@@ -283,17 +269,15 @@ h4 {
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
 
     #blog h3,
     h4 {
         font-size: 35px;
     }
-
 }
 
 /*--------info--------*/
-
 #info {
     background: #B6E388;
     color: black;
@@ -318,26 +302,23 @@ h4 {
     border: 7px solid #fff;
 }
 
-@media (min-width:480px) {
+@media (min-width: 480px) {
     .info-pet {
         width: 40%;
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .info-pet {
         width: auto;
     }
 }
 
-
 /*--------footer--------*/
-
 footer .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .copy {
@@ -355,10 +336,7 @@ footer .contenedor {
     text-decoration: none;
 }
 
-
-
-@media (min-whith:768px) {
-
+@media (min-whith: 768px) {
     .sociales {
         width: auto;
     }
@@ -368,7 +346,7 @@ footer .contenedor {
     }
 }
 
-@media (min-whith:1024px) {
+@media (min-whith: 1024px) {
     .contenedor {
         width: auto;
     }
@@ -388,7 +366,7 @@ footer .contenedor {
 }
 
 .form__titulo {
-    background: rgba(207, 181, blue, 181);
+    background: rgba(32, 30, 30, 0.418);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -439,7 +417,7 @@ input {
 }
 
 /*--------galeria--------*/
-h2{
+h2 {
     text-align: center;
 }
 
@@ -452,8 +430,7 @@ h2{
     gap: 10px;
     padding: 10px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "photo-16 photo-16 photo-16 photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
+    grid-template-areas: "photo-16 photo-16 photo-16 photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
         "photo-16 photo-16 photo-16 photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
         "photo-16 photo-16 photo-16 photo-1 photo-1 photo-15 photo-15 photo-15 photo-10 photo-10"
         "photo-16 photo-16 photo-16 photo-1 photo-1 photo-15 photo-15 photo-15 photo-10 photo-10"
@@ -464,11 +441,13 @@ h2{
         "photo-7 photo-7 photo-7 photo-9 photo-9 photo-13 photo-13 photo-17 photo-17 photo-17"
         "photo-7 photo-7 photo-7 photo-9 photo-9 photo-13 photo-13 photo-17 photo-17 photo-17";
 }
-#projects .tile{
+
+#projects .tile {
     opacity: 0.5;
     transition: all 0.1s ease-in;
 }
-#projects .tile:hover{
+
+#projects .tile:hover {
     transform: scale(0.99);
     opacity: 1;
 }
@@ -479,10 +458,12 @@ h2{
     background-size: cover;
     background-position: center center;
 }
+
 #projects .tile a {
     display: grid;
     height: 100%;
 }
+
 .photo-2 {
     grid-area: photo-2;
     background-image: url(img/work2.jpg);
@@ -541,7 +522,6 @@ h2{
 .photo-8 {
     grid-area: photo-8;
     background-image: url(img/work-8.jpg);
-
 }
 
 .photo-9 {
@@ -573,7 +553,6 @@ h2{
 h5 {
     text-align: center;
     font-size: 20px;
-
 }
 
 h5 a {
@@ -589,9 +568,7 @@ h5 a:hover {
     color: #fff;
 }
 
-
 /*--------productos--------*/
-
 #blog-productos h3,
 h4 {
     text-align: center;
@@ -644,7 +621,7 @@ h4 {
     color: #fff;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
 
     #blog-productos h3,
     h4 {
