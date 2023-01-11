@@ -1,0 +1,7 @@
+.btn-enviar {
+    background: map-get($colores-extras, fuscia );
+    color: map-get($colores-extras, blanco );
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+}

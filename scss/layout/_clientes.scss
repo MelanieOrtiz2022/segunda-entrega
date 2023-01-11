@@ -1,0 +1,55 @@
+.form {
+    padding: 80px;
+}
+
+.form-registre {
+    @include ancho (95%);
+    max-width: 500px;
+    margin: auto;
+    background: $transparente-oscuro;
+    border-radius: 7px;
+}
+
+.form__titulo {
+    background: $transparente-oscuro;
+    color: $blanco;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom: 5px solid $fuscia;
+}
+
+.contenedor-inputs {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.input-48 {
+    @include ancho (48%);
+}
+
+.input-100 {
+    @include ancho (100%);
+}
+
+
+.btn-enviar:active {
+    transform: scale(1.05);
+}
+
+.form__link {
+    @include ancho (100%);
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+}
