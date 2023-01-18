@@ -34,9 +34,6 @@ header .contenedor {
 h1 {
   float: left; }
 
-#menu-bar {
-  display: none; }
-
 header label {
   float: right;
   font-size: 28px;
@@ -77,6 +74,8 @@ header label {
   .menu a {
     border: none; }
   header label {
+    display: none; }
+  #menu-bar {
     display: none; } }
 
 section {
@@ -86,7 +85,9 @@ section {
 
 #barner {
   margin-top: 50px;
-  position: relative; }
+  position: relative;
+  background-size: cover;
+  background-position: center; }
   #barner img {
     height: auto;
     width: 100%;
@@ -101,12 +102,13 @@ section {
     text-align: center;
     justify-content: center;
     font-family: "Permanent Marker", cursive; }
-  #barner h2 {
-    font-size: 20px; }
+  #barner .barner-title {
+    font-size: 35px;
+    font-family: "Permanent Marker", cursive; }
 
 @media (min-width: 480px) {
-  #barner h2 {
-    font-size: 40px; } }
+  #barner {
+    font-size: 50px; } }
 
 @media (min-width: 768px) {
   #barner {
@@ -119,7 +121,7 @@ section {
 @media (min-width: 1024px) {
   #barner img {
     margin-top: -200px; }
-  #barner h2 {
+  #barner .barner-title {
     font-size: 60px; } }
 
 #Bienvenidos {
@@ -135,10 +137,16 @@ section {
   #Bienvenidos h2 {
     font-size: 35px; } }
 
+footer {
+  margin-top: 20px; }
+
 footer .contenedor {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  box-shadow: 0 0 0 2px black;
+  width: 100%;
+  padding: 15px; }
 
 .copy {
   font-size: 20px; }
@@ -202,8 +210,14 @@ footer .contenedor {
   .slider {
     height: 500px; } }
 
+.reg-title {
+  font-size: 20px; }
+
 .form {
-  padding: 80px; }
+  padding: 80px;
+  background-image: url(../../css/img/backraung.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .form-registre {
   height: auto;
@@ -250,7 +264,11 @@ input {
   width: 100%;
   margin: 7px;
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #fff; }
+
+.form__link a {
+  color: #fff; }
 
 h2 {
   text-align: center; }
@@ -352,6 +370,9 @@ h2 {
   grid-area: photo-17;
   background-image: url(img/work17.jpg); }
 
+.card {
+  padding: 20px; }
+
 h5 {
   text-align: center;
   font-size: 20px; }
@@ -359,6 +380,7 @@ h5 {
 h5 a {
   text-decoration: none;
   color: black;
+  padding: 5px;
   border: 1px solid black;
   border-radius: 4px;
   transition: all 400ms ease; }
@@ -379,6 +401,10 @@ h4 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+
+article {
+  border: 1px black solid;
+  padding: 10px; }
 
 #blog-productos article {
   margin: 20px; }
@@ -421,7 +447,7 @@ h4 {
 #blog h3,
 h4 {
   text-align: center;
-  font-size: 15px; }
+  font-size: 25px; }
 
 #blog .contenedor {
   display: flex;
@@ -434,17 +460,22 @@ h4 {
 #blog img {
   height: auto;
   width: 100%;
-  max-width: 280px; }
+  max-width: 320px;
+  padding: 10px; }
 
 @media (min-width: 768px) {
   #blog h3,
   h4 {
-    font-size: 25px; } }
+    font-size: 25px; }
+  #blog img {
+    max-width: 380px; } }
 
 @media (min-width: 1024px) {
   #blog h3,
   h4 {
-    font-size: 35px; } }
+    font-size: 30px; }
+  #blog img {
+    max-width: 350px; } }
 
 #info {
   background: #B6E388;
@@ -458,14 +489,14 @@ h4 {
   justify-content: center; }
 
 .info-pet {
-  margin: 20px; }
+  margin: 40px; }
 
 .info-pet img {
   height: auto;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  border: 7px solid #fff; }
+  border: 7px solid #d33694; }
 
 @media (min-width: 480px) {
   .info-pet {

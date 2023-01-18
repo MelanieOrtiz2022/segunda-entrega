@@ -1,5 +1,14 @@
+
+.reg-title{
+    font-size: 20px;
+}
+
 .form {
     padding: 80px;
+    background-image: url(../../css/img/backraung.jpg); 
+    background-size: cover;
+    background-position: center
+
 }
 
 .form-registre {
@@ -52,4 +61,8 @@ input {
     margin: 7px;
     text-align: center;
     font-size: 14px;
+    color: $blanco;
+}
+.form__link a{
+    color: $blanco;
 }

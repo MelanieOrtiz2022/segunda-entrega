@@ -22,9 +22,7 @@ h1 {
     float: left;
 }
 
-#menu-bar {
-    display: none;
-}
+
 
 header label {
     float: right;
@@ -76,6 +74,9 @@ header label {
     }
 
     header label {
+        display: none;
+    }
+    #menu-bar {
         display: none;
     }
 }

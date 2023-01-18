@@ -1,7 +1,14 @@
+
+footer{
+    margin-top: 20px;
+}
 footer .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-shadow: 0 0 0 2px $negro;
+    width: 100%;
+    padding: 15px;
 
 }
 
