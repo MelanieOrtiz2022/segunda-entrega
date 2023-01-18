@@ -1,129 +1,68 @@
-h2{
+h2 {
     text-align: center;
 }
 
-#projects {
-    background-color: $negro;
-    min-height: 100vh;
+.container-img {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "photo-16 photo-16 photo-16 photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
-        "photo-16 photo-16 photo-16 photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
-        "photo-16 photo-16 photo-16 photo-1 photo-1 photo-15 photo-15 photo-15 photo-10 photo-10"
-        "photo-16 photo-16 photo-16 photo-1 photo-1 photo-15 photo-15 photo-15 photo-10 photo-10"
-        "photo-16 photo-16 photo-16 photo-8 photo-8 photo-15 photo-15 photo-15 photo-10 photo-10"
-        "photo-16 photo-16 photo-16 photo-8 photo-8 photo-14 photo-14 photo-14 photo-10 photo-10"
-        "photo-16 photo-16 photo-16 photo-8 photo-8 photo-14 photo-14 photo-14 photo-5 photo-6"
-        "photo-16 photo-16 photo-16 photo-9 photo-9 photo-11 photo-12 photo-17 photo-17 photo-17"
-        "photo-7 photo-7 photo-7 photo-9 photo-9 photo-13 photo-13 photo-17 photo-17 photo-17"
-        "photo-7 photo-7 photo-7 photo-9 photo-9 photo-13 photo-13 photo-17 photo-17 photo-17";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+
 }
-#projects .tile{
+
+.container-img .box-img figure {
+    width: 100%;
+    height: 100%;
+}
+
+.container-img .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     opacity: 0.5;
     transition: all 0.1s ease-in;
+    background: $gris;
 }
-#projects .tile:hover{
+
+.container-img .box-img img:hover{
     transform: scale(0.99);
     opacity: 1;
 }
 
-#projects .tile {
-    background-color: $gris;
-    border-radius: 5px;
-    background-size: cover;
-    background-position: center center;
-}
-#projects .tile a {
-    display: grid;
-    height: 100%;
-}
-.photo-2 {
-    grid-area: photo-2;
-    background-image: url(img/work2.jpg);
+.container-img .box-img:nth-child(1) {
+    grid-column-start: span 2;
 }
 
-.photo-3 {
-    grid-area: photo-3;
-    background-image: url(img/work3.jpg);
+.container-img .box-img:nth-child(4) {
+    grid-row-start: span 2;
 }
 
-.photo-4 {
-    grid-area: photo-4;
-    background-image: url(img/work4.jpg);
+@media (max-width:800px) {
+    .container-img {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+
+    .container-img .box-img:nth-child(1) {
+        grid-column-start: span 1;
+    }
 }
+@media (max-width:500px) {
+    .container-img {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
 
-.photo-16 {
-    grid-area: photo-16;
-    background-image: url(img/work16.jpg);
-}
-
-.photo-10 {
-    grid-area: photo-10;
-    background-image: url(img/work10.jpg);
-}
-
-.photo-15 {
-    grid-area: photo-15;
-    background-image: url(img/work15.jpg);
-}
-
-.photo-7 {
-    grid-area: photo-7;
-    background-image: url(img/work7.jpg);
-}
-
-.photo-1 {
-    grid-area: photo-1;
-    background-image: url(img/work1.jpg);
-}
-
-.photo-14 {
-    grid-area: photo-14;
-    background-image: url(img/work14.jpg);
-}
-
-.photo-5 {
-    grid-area: photo-5;
-    background-image: url(img/work5.jpg);
-}
-
-.photo-6 {
-    grid-area: photo-6;
-    background-image: url(img/work6.jpg);
-}
-
-.photo-8 {
-    grid-area: photo-8;
-    background-image: url(img/work-8.jpg);
-
-}
-
-.photo-9 {
-    grid-area: photo-9;
-    background-image: url(img/work9.jpg);
-}
-
-.photo-11 {
-    grid-area: photo-11;
-    background-image: url(img/work11.jpg);
-}
-
-.photo-12 {
-    grid-area: photo-12;
-    background-image: url(img/work12.jpg);
-}
-
-.photo-13 {
-    grid-area: photo-13;
-    background-image: url(img/work13.jpg);
-}
-
-.photo-17 {
-    grid-area: photo-17;
-    background-image: url(img/work17.jpg);
+    .container-img .box-img img {
+        height: 200px;
+       
+    }
 }
